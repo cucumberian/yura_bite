@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.colors {
+    --main-theme-color: #6B90A5;
+    --secondary-theme-color: #93B8CB;
+    --bg-color: #F8F8F8;
+    --dark-color: #1E1E1E;
+    --text-color-light: #5A5A5A;
+    --light-gray-color: #b2b2b2;
+    --yellow-color: #F7BE15;
+    --white-color: #FFFFFF;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+.header {
+    padding: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 544px;
+        width: 100%;
+    }
+
+    .header-logo {
+        background-color: var(--secondary-theme-color);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .header-logo-text {
+            box-sizing: border-box;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 100%;
+            color: var(--white-color);
+        }
+    }
+
+    .header-menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    
+        .header-menu-link {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: var(--text-color-light);
+        }
+        .header-menu-link:hover {
+            border-bottom: 3px solid var(--light-gray-color);
+        }
+    }
+}
+
+
+
+
+
+
+#main {
+    padding-bottom: 60px;
+
+    .main-background {
+        background-color: var(--bg-color);
+        max-width: 1320px;
+        width: 100%;
+        height: 730px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .main-section {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 60px;
+
+        .main-section-h1 {
+            max-width: 659px;
+            width: 100%;
+            margin-top: 80px;
+            margin-bottom: 60px;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: var(--dark-color);   
+        }
+        .main-section-h1 > span {
+            color: var(--secondary-theme-color);
+        }
+
+        .main-section-text {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 140%;
+            color: var(--text-color-light);
+            max-width: 369px;
+            width: 100%;
+        }
+
+        .main-section-button-group {
+            position: absolute;
+            bottom: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-section-price-box {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            
+            .main-section-price {
+                color: var(--dark-color);
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 120%;
+                width: 90px;
+            };
+            .main-section-price-item {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 120%;
+                width: 90px;
+            }
+        }
+
+        .main-section-bite-button {
+            background-color: var(--dark-color);
+            color: var(--white-color);
+            width: 260px;
+            height: 60px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.3s;
+        }
+        .main-section-bite-button:hover {
+            font-size: 15px;
+            transition-duration: 0.3s;
+        }
+
+        
+    }
+    .yura-image {
+        position: absolute;
+        left: -350px;
+        bottom: -320px;
+        transform: scale(-50%, 50%) rotate(20deg);
+    }
+    .yura-image-badge {
+        position: absolute;
+        left: 300px;
+        bottom: 300px;
+        z-index: -1;
+    }
+}
+
